@@ -4,7 +4,10 @@
     require_once 'Product.php';
     require_once 'AnimalProduct.php';
 
-
+    $categoryDog = new Category("Cane");
+    $categoryCat = new Category("Gatto");
+    $categoryBird = new Category("Uccelli");
+    $categoryFish = new Category("Pesci");
             
     $products = array(
         new AnimalProduct("Royal Canin Mini Adult", 23, "https://arcaplanet.vtexassets.com/arquivos/ids/243820/royal-canin-size-cane-mini-adult.jpg", $categoryDog),
