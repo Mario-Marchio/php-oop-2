@@ -32,14 +32,14 @@
                 );
                 foreach ($products as $product) {
                 echo '<div class="col-md-4 mb-4">';
-                echo '<div class="card">';
-                echo '<img src="' . $product->getPhotoUrl() . '" class="card-img-top" alt="' . $product->getName() . '">';
-                echo '<div class="card-body">';
-                echo '<h5 class="card-title">' . $product->getName() . '</h5>';
-                echo '<p class="card-text">Categoria: ' . $product->getCategory()->getName() . '</p>';
-                echo '<p class="card-text">Prezzo: ' . $product->getFormattedPrice() . '</p>';
-                echo '</div>';
-                echo '</div>';
+                    echo '<div class="card">';
+                        echo '<img src="' . $product->getPhotoUrl() . '" class="card-img-top" alt="' . $product->getName() . '">';
+                        echo '<div class="card-body">';
+                            echo '<h4 class="card-title">' . $product->getName() . '</h4>';
+                            echo '<p class="card-text">Categoria: ' . $product->getCategory()->getName() . '</p>';
+                            echo '<p class="card-text">Prezzo: ' . $product->getFormattedPrice() . '</p>';
+                        echo '</div>';
+                    echo '</div>';
                 echo '</div>';
                 }
             ?> 
